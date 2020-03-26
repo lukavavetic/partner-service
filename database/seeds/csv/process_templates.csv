@@ -1,0 +1,10 @@
+id;name;template
+1;NEW_CONNECTION;{"serial":[{"process":"CONNECTION_ORDER"},{"process":"CONNECTION_WAIT_FOR_RESPONSE"},{"switch":[{"label":"CONNECTION_ORDER_CONFIRMED","serial":[{"process":"CONNECTION_WAIT_FOR_RESPONSE"},{"switch":[{"label":"CONNECTION_ORDER_PLANDATE","serial":[{"process":"CONNECTION_ORDER_PLANDATE"},{"goto":"CONNECTION_ORDER_CONFIRMED"}]},{"label":"CONNECTION_ORDER_FINALIZED","serial":[{"process":"CONNECTION_ORDER_FINALIZED"}]}]}]},{"label":"CONNECTION_ORDER_DECLINED","serial":[{"process":"CONNECTION_ORDER_FAILED"}]}]}]}
+2;TEST_PRODUCT;{"serial":[{"process": "TEST_PROCESS_1"},{"process": "TEST_PROCESS_2"}]}
+
+
+
+
+
+
+
